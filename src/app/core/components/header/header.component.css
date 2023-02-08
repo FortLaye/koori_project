@@ -1,0 +1,27 @@
+mat-toolbar{
+	background-color: var(--vert);
+	color: var(--white);
+	display: flex;
+	justify-content: space-between;
+}
+.o-koori{
+	font-style: normal;
+	font-weight: 500;
+	color: var(--orange);
+}
+.logo{
+	font-size: 1.3em;
+}
+ul li{
+	display: inline-block;
+	list-style: none;
+	margin: 0rem 3rem 0 3rem;
+}
+a{
+	text-decoration: none;
+	color: var(--white);
+}
+.router-link-active{
+	color: var(--orange);
+	text-decoration: underline;
+}
