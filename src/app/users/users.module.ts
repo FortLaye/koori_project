@@ -6,6 +6,7 @@ import { HomeComponent } from './components/home/home.component';
 import { KooriIboxComponent } from './components/koori-ibox/koori-ibox.component';
 import { KooriComponent } from './components/koori-ibox/koori/koori.component';
 import { IboxComponent } from './components/koori-ibox/ibox/ibox.component';
+import { CarouselComponent } from './components/home/carousel/carousel.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { IboxComponent } from './components/koori-ibox/ibox/ibox.component';
     HomeComponent,
     KooriIboxComponent,
     KooriComponent,
-    IboxComponent
+    IboxComponent,
+    CarouselComponent
   ],
   imports: [
     CommonModule,

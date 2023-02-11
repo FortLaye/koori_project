@@ -1,12 +1,31 @@
-<mat-toolbar id="toolbar">
-	<span class="logo">
-		KO<i class="o-koori">O</i>RI
-	</span>
+<nav class="navbar sticky-top navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" [routerLink]="['home']">
+      <img src="assets/img/logo-koori.png" alt="" width="60" height="50">
+      &nbsp;<span>KO<i class="o-koori">0</i>RI</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
 
-	<ul>
-		<li><a routerLink="/users/home" routerLinkActive="router-link-active" [routerLinkActiveOptions]="{ exact: true }">Home</a></li>
-		<li><a routerLink="/users/koori-ibox/koori" routerLinkActive="router-link-active">Koori</a></li>
-		<li><a routerLink="/users/koori-ibox/ibox" routerLinkActive="router-link-active">Ibox</a></li>
-	</ul>
-	
-</mat-toolbar>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto w-100 justify-content-end">
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="/users/home" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }" >Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/users/koori-ibox/koori" routerLinkActive="active-link">Koori</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/users/koori-ibox/ibox" routerLinkActive="active-link">Ibox</a>
+        </li>
+<!--        <li class="nav-item">-->
+<!--          <a class="nav-link" routerLink="/users/koori-ibox/ibox" routerLinkActive="active-link">Services</a>-->
+<!--        </li>-->
+<!--        <li class="nav-item">-->
+<!--          <a class="nav-link" routerLink="/users/koori-ibox/ibox" routerLinkActive="active-link">Other</a>-->
+<!--        </li>-->
+      </ul>
+    </div>
+  </div>
+</nav>

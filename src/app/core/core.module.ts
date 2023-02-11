@@ -7,8 +7,6 @@ import { SharedModule } from '../shared/shared.module';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 
-
-
 @NgModule({
   declarations: [
     HeaderComponent,
@@ -20,7 +18,8 @@ import { FooterComponent } from './components/footer/footer.component';
     ReactiveFormsModule,
     MdbModalModule,
     NgChartsModule,
-    SharedModule
+    SharedModule,
+
   ],
   exports: [
     FormsModule,
@@ -28,7 +27,8 @@ import { FooterComponent } from './components/footer/footer.component';
     FooterComponent,
     ReactiveFormsModule,
     MdbModalModule,
-    NgChartsModule
+    NgChartsModule,
+
   ],
 })
 export class CoreModule { }

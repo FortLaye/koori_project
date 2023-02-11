@@ -1,27 +1,47 @@
-mat-toolbar{
-	background-color: var(--vert);
-	color: var(--white);
-	display: flex;
-	justify-content: space-between;
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Montserrat:wght@500&family=Open+Sans&display=swap');
+* {
+  font-family: 'Montserrat', sans-serif;
 }
-.o-koori{
-	font-style: normal;
-	font-weight: 500;
-	color: var(--orange);
+.navbar{
+  background-color: var(--vert);
 }
-.logo{
-	font-size: 1.3em;
+
+.navbar .navbar-brand {
+  font-size: 30px;
+  color: var(--white);
 }
-ul li{
-	display: inline-block;
-	list-style: none;
-	margin: 0rem 3rem 0 3rem;
+.navbar .nav-item {
+  padding: 10px 20px;
+}
+.navbar .nav-link {
+  font-size: 20px;
+  margin-left: 10px;
+}
+.fa-bars {
+  color: #007bff;
+  font-size: 30px;
 }
 a{
-	text-decoration: none;
-	color: var(--white);
+  color: var(--white);
+  font-weight: 400;
 }
-.router-link-active{
-	color: var(--orange);
-	text-decoration: underline;
+.active-link, a:hover{
+  color: var(--orange);
+  text-decoration: underline;
+}
+.o-koori{
+  font-style: normal;
+  color: var(--orange);
+}
+.navbar-brand:hover{
+  text-decoration: none;
+}
+.navbar-brand:hover span{
+  color: var(--orange);
+}
+.navbar-brand:hover span i {
+  color: var(--white);
+}
+.fa-bars{
+  color: var(--white);
 }
